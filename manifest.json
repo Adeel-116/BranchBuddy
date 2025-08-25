@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Text Tune AI",
+  "version": "1.0",
+  "description": "An advanced AI-powered writing assistant.",
+  "icons": {
+    "128": "assets/icon.png"
+  },
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["storage", "activeTab", "scripting", "contextMenus"]
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Writing Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img src="../assets/icon.png" alt="AI" class="logo" />
+      <h1>AI Assistant</h1>
+    </div>
+
+    <!-- Tone Selector -->
+    <div class="section">
+      <label for="tone">Writing Tone</label>
+      <select id="tone">
+        <option>Formal</option>
+        <option>Friendly</option>
+        <option>Concise</option>
+        <option>Creative</option>
+      </select>
+    </div>
+
+    <!-- Toggle Switch -->
+    <div class="section">
+      <label class="switch">
+        <input type="checkbox" id="autoSuggest">
+        <span class="slider"></span>
+      </label>
+      <span class="switch-label">Enable Auto Suggestions</span>
+    </div>
+
+    <!-- Save Button -->
+    <button class="save-btn">💾 Save Settings</button>
+  </div>
+</body>
+</html>
