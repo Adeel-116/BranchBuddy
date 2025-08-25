@@ -1,115 +1,44 @@
 body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: #f5f7fa;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background: #f5f9ff;
   width: 300px;
-}
-
-.container {
   padding: 15px;
+  color: #222;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #0096ff, #00c897);
+button {
+  background: #0096FF;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  font-size: 14px;
 }
 
-.header .logo {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+button:hover {
+  background: #0077cc;
 }
 
-.section {
-  margin: 15px 0;
+.hidden {
+  display: none;
 }
 
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 5px;
+.avatar {
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-select, input[type="password"] {
-  width: 100%;
+#repoList {
+  list-style: none;
+  padding: 0;
+}
+
+#repoList li {
+  background: white;
+  margin: 5px 0;
   padding: 8px;
   border-radius: 6px;
-  border: 1px solid #ccc;
-  outline: none;
-  transition: 0.2s;
-}
-
-select:focus, input:focus {
-  border-color: #0096ff;
-  box-shadow: 0 0 5px rgba(0,150,255,0.3);
-}
-
-/* Toggle Switch */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 45px;
-  height: 24px;
-}
-
-.switch input { display: none; }
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0; left: 0;
-  right: 0; bottom: 0;
-  background: #ccc;
-  border-radius: 24px;
-  transition: .3s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 18px; width: 18px;
-  left: 3px; bottom: 3px;
-  background: white;
-  border-radius: 50%;
-  transition: .3s;
-}
-
-input:checked + .slider {
-  background: #00c897;
-}
-
-input:checked + .slider:before {
-  transform: translateX(20px);
-}
-
-.switch-label {
-  margin-left: 10px;
-  font-size: 14px;
-  vertical-align: middle;
-}
-
-/* Save Button */
-.save-btn {
-  width: 100%;
-  padding: 10px;
-  background: linear-gradient(135deg, #0096ff, #00c897);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.save-btn:hover {
-  opacity: 0.9;
-  transform: scale(1.02);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }

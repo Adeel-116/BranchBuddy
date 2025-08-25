@@ -2,39 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AI Writing Assistant</title>
+  <title>GitHub Status</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <div class="header">
-      <img src="../assets/icon.png" alt="AI" class="logo" />
-      <h1>AI Assistant</h1>
-    </div>
+  <div id="container">
+    <button id="loginBtn">🔑 Login with GitHub</button>
 
-    <!-- Tone Selector -->
-    <div class="section">
-      <label for="tone">Writing Tone</label>
-      <select id="tone">
-        <option>Formal</option>
-        <option>Friendly</option>
-        <option>Concise</option>
-        <option>Creative</option>
-      </select>
-    </div>
+    <div id="profile" class="hidden">
+      <img id="avatar" class="avatar" />
+      <h2 id="name"></h2>
+      <p id="username"></p>
+      <p id="bio"></p>
+      <p><b>Repos:</b> <span id="reposCount"></span></p>
+      <p><b>Followers:</b> <span id="followers"></span> | <b>Following:</b> <span id="following"></span></p>
 
-    <!-- Toggle Switch -->
-    <div class="section">
-      <label class="switch">
-        <input type="checkbox" id="autoSuggest">
-        <span class="slider"></span>
-      </label>
-      <span class="switch-label">Enable Auto Suggestions</span>
+      <h3>Recent Repositories</h3>
+      <ul id="repoList"></ul>
     </div>
-
-    <!-- Save Button -->
-    <button class="save-btn">💾 Save Settings</button>
   </div>
+
+  <script src="popup.js"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Text Tune AI",
+  "name": "Github Buddy",
   "version": "1.0",
-  "description": "An advanced AI-powered writing assistant.",
+  "description": "A Github Commit Code",
   "icons": {
     "128": "assets/icon.png"
   },
@@ -20,5 +20,5 @@
       "run_at": "document_idle"
     }
   ],
-  "permissions": ["storage", "activeTab", "scripting", "contextMenus"]
+  "permissions": ["storage", "activeTab", "scripting", "contextMenus", "identity"]
 }
