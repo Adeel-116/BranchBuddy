@@ -1,5 +1,5 @@
-const CLIENT_ID = "Ov23li1Qq7LgoorY6Own";
-const CLIENT_SECRET = "b37f425da214bafd21100ee1090f74ebe781652f";
+const CLIENT_ID = "Ov23li1Qq7Lgdsoo232sfsjghjrY6Ownfhfhfh";
+const CLIENT_SECRET = "b37f425da214rwqrfqw3141aqdfdsfdsfsasddas2110dadsd343525342`20ee1090dsasdadhghdgdff74ebe781652f";
 const REDIRECT_URI = chrome.identity.getRedirectURL();
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
