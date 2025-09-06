@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Github Buddy",
   "version": "1.0",
-  "description": "A Github Commit Code",
+ "description": "View your GitHub profile stats, repos, and followers directly from your browser extension.",
   "icons": {
     "128": "assets/icon.png"
   },
@@ -12,7 +12,6 @@
   "action": {
     "default_popup": "popup/popup.html"
   },
-  "options_page": "options/options.html",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

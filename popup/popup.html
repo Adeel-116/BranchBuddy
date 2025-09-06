@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>GitHub Status</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
@@ -14,14 +15,27 @@
       <h2 id="name"></h2>
       <p id="username"></p>
       <p id="bio"></p>
-      <p><b>Repos:</b> <span id="reposCount"></span></p>
-      <p><b>Followers:</b> <span id="followers"></span> | <b>Following:</b> <span id="following"></span></p>
+      
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-number" id="reposCount">0</span>
+          <div class="stat-label">Repos</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="followers">0</span>
+          <div class="stat-label">Followers</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="following">0</span>
+          <div class="stat-label">Following</div>
+        </div>
+      </div>
 
       <h3>Recent Repositories</h3>
       <ul id="repoList"></ul>
     </div>
   </div>
 
-  <script src="popup.js"></script>
+  <script src="./popup.js"></script>
 </body>
 </html>
