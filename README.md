@@ -42,8 +42,7 @@ Task-Managment-App ⭐0 | JavaScript
 CMS-Java-Project ⭐6 | Java
 
 **Here are example screenshots of the extension in action:**
-![Extension Screenshot 1](./screenshots/screenshot1.png)  
-![Extension Screenshot 2](./screenshots/screenshot2.png)
+![Extension Screenshot 1](./screen-shot/p.png)  
 
 > 📌 Put your actual images inside a `screenshots` folder in the project root and name them `screenshot1.png` and `screenshot2.png`.
 
@@ -55,7 +54,14 @@ CMS-Java-Project ⭐6 | Java
    ```bash
    git clone https://github.com/Adeel-116/github-stats-extension.git
 
+## 📌 Tech Stack
 
+JavaScript (Vanilla) – Core logic <br/>
+HTML & CSS – Popup UI   <br/>
+GitHub API – To fetch user profile and repositories  <br/>
+Browser Extension APIs – For integration with Chrome  <br/>
 
-Followers: 3 | Following: 0
+**👨‍💻 Author**
+Muhammad Adeel
+GitHub @Adeel-116
 
